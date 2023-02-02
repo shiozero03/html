@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>walikota.go.id</title>
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/css/index.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/css/style.css">
+  <style type="text/css">
+  </style>
+</head>
+<body>
+    <header class="bg-white w-100 fixed-top">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html">
+              <img src="assets/images/html5-logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+              <span class="mb-2">WALIKOTA.GO.ID</span>
+            </a>
+            <button class="navbar-toggler" id="tgl-clck" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars text-white" id="open"></i>
+              <i class="fas fa-close text-white d-none" id="close"></i>
+            </button>
+            <div class="collapse px-lg-2 px-4 navbar-collapse" id="navbarSupportedContent" >
+                <form class="position-relative search d-lg-none" role="search">
+                <input class="form-control cari" type="text" placeholder="PENCARIAN" aria-label="Search">
+                <button class="btn position-absolute text-dark" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link py-lg-3 py-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    WALIKOTA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="walikota.html">Walikota</a></li>
+                    <li><a class="dropdown-item" href="wakil-walikota.html">Wakil Walikota</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link py-lg-3 py-2 px-lg-3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PERS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="siaran.html">Siaran Pers</a></li>
+                    <li><a class="dropdown-item" href="foto.html">Foto Walikota</a></li>
+                    <li><a class="dropdown-item" href="video.html">Video Walikota</a></li>
+                    <li><a class="dropdown-item" href="transkrip.html">Transkrip Pernyataan</a></li>                
+                  </ul>
+                </li>
+                <li class="nav-item dropdown me-lg-3">
+                  <a class="nav-link py-lg-3 py-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PEMERINTAHAN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="kabinet-indonesia-maju.html">Kabinet Indonesia Maju</a></li>
+                    <li><a class="dropdown-item" href="capaian-kinerja.html">Capaian Kinerja</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="position-relative search d-lg-block d-none" role="search">
+                <input class="form-control cari" type="text" placeholder="PENCARIAN" aria-label="Search">
+                <button class="btn position-absolute text-white" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <div class="content bg-white">
+        <div class="top-news">
+          <div class="row">
+            <div class="col-lg-3 border-end my-lg-2">
+              <div class="d-flex news-in-top align-items-center position-relative mx-lg-3 my-lg-1">
+                <img src="assets/images/berita/news-1.jpg" width="48" height="48" class="me-lg-2">
+                <div class="cover-text-hype-top">
+                  <a class="text-decoration-none text-hype-top position-absolute" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a>
+                  <span class="position-absolute">Selasa, 10 Januari 2023 19:37 WIB</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 border-end my-lg-2">
+              <div class="d-flex news-in-top align-items-center position-relative mx-lg-3 my-lg-1">
+                <img src="assets/images/berita/news-1.jpg" width="48" height="48" class="me-lg-2">
+                <div class="cover-text-hype-top">
+                  <a class="text-decoration-none text-hype-top position-absolute" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a>
+                  <span class="position-absolute">Selasa, 10 Januari 2023 19:37 WIB</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 border-end my-lg-2">
+              <div class="d-flex news-in-top align-items-center position-relative mx-lg-3 my-lg-1">
+                <img src="assets/images/berita/news-1.jpg" width="48" height="48" class="me-lg-2">
+                <div class="cover-text-hype-top">
+                  <a class="text-decoration-none text-hype-top position-absolute" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a>
+                  <span class="position-absolute">Selasa, 10 Januari 2023 19:37 WIB</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 my-lg-2">
+              <div class="d-flex news-in-top align-items-center position-relative mx-lg-3 my-lg-1">
+                <img src="assets/images/berita/news-1.jpg" width="48" height="48" class="me-lg-2">
+                <div class="cover-text-hype-top">
+                  <a class="text-decoration-none text-hype-top position-absolute" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a>
+                  <span class="position-absolute">Selasa, 10 Januari 2023 19:37 WIB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news-content">
+            <div class="row rcnl">
+                <div class="content-news-left">
+                    <div class="position-relative top-news-left">
+                        <img src="assets/images/berita/news-5.jpg" width="100%">
+                        <div class="ach-title position-absolute">
+                            <span class="text-white px-2 py-1">TERKINI</span>
+                        </div>
+                        <div class="position-absolute news-title">
+                      <h2><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1" class="text text-white">The standard Lorem Ipsum passage, used since the 1500s</a></h2>
+                      <span class="text-white"><a href="" class="text-white" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Baca Selengkapnya</a> | Kamis, 26 Januari 2023 14:14 WIB</span>
+                        </div>
+                        <div class="mx-2 content-responsive mt-2 border-bottom pb-3">
+                      <h4><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1" class="text text-decoration-none">The standard Lorem Ipsum passage, used since the 1500s</a></h4>
+                      <span>Kamis, 26 Januari 2023 14:14 WIB</span>
+                      <p class="mt-3">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                      </p>
+                        </div>
+                    </div>
+                    <br>
+                    <span class="span-title text-white px-3 py-1">
+                        Siaran Pers
+                    </span>
+                    <br>
+                    <div class="second-news-left">
+                        <div class="row mx-2">
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="content-after pt-3">
+                        <div class="row mx-2">
+                          <div class="col-6">
+                            <div class="border-top pt-3">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br><br>
+                              <small >Kamis, 26 Januari 2023 14:07 WIB</small>
+                            </div>
+                          </div> 
+                          <div class="col-6">
+                            <div class="border-top pt-3">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br><br>
+                              <small >Kamis, 26 Januari 2023 14:07 WIB</small>
+                            </div>
+                          </div>    
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ms-2 ps-3 border-bottom pb-2 py-3 title-cover title-1">
+                        <h6>Aktivitas Ibu Negara</h6>
+                    </div>
+                    <div class="position-relative bottom-news-left">
+                        <img src="assets/images/berita/news-5.jpg" class="ibu-negara" width="100%">
+                        <div class="ach-title position-absolute">
+                          <span class="text-white px-2 py-1">IBU NEGARA</span>
+                        </div>
+                        <div class="position-absolute news-title">
+                          <h2 class="text text-white">The standard Lorem Ipsum passage, used since the 1500s</h2>
+                          <span class="text-white">Aktivitas Ibu Negara Republik Indonesia</span>
+                        </div>
+                        <div class="news-bottom">
+                          <div class="row mx-2">
+                            <div class="news-middle my-2">
+                              <div class="bottom-img">
+                                <img src="assets/images/berita/news-3.jpg" width="100%">
+                              </div>
+                              <div class="bottom-text">
+                                <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                                <small >Kamis, 26 Januari 2023</small> <small class="time-small">14:07 WIB</small>
+                              </div>
+                            </div>
+                            <div class="news-middle my-2">
+                              <div class="bottom-img">
+                                <img src="assets/images/berita/news-3.jpg" width="100%">
+                              </div>
+                              <div class="bottom-text">
+                                <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                                <small >Kamis, 26 Januari 2023</small> <small class="time-small">14:07 WIB</small>
+                              </div>
+                            </div>
+                            <div class="news-middle my-2">
+                              <div class="bottom-img">
+                                <img src="assets/images/berita/news-3.jpg" width="100%">
+                              </div>
+                              <div class="bottom-text">
+                                <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                                <small >Kamis, 26 Januari 2023</small> <small class="time-small">14:07 WIB</small>
+                              </div>
+                            </div>
+                            <div class="news-middle my-2">
+                              <div class="bottom-img">
+                                <img src="assets/images/berita/news-3.jpg" width="100%">
+                              </div>
+                              <div class="bottom-text">
+                                <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                                <small >Kamis, 26 Januari 2023</small> <small class="time-small">14:07 WIB</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                </div>
+                <div class="content-news-right">
+                  <div class="position-relative top-news-right">
+                    <div class="image-future-top-news-right">
+                      <img src="assets/images/berita/news-5.jpg" width="100%">
+                      <div class="ach-title position-absolute">
+                        <span class="text-white px-2 py-1">FOTO</span>
+                      </div>
+                      <div class="position-absolute news-title">
+                        <h5><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1" class="text text-white">The standard Lorem Ipsum passage, used since the 1500s</a></h5>
+                        <small class="text-white">6 Foto | Kamis, 26 Januari 2023 14:14 WIB</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 pe-4 border-bottom pb-2 py-3 title-cover title-2 text-white">
+                      <h6>Foto Kegiatan Walikota</h6>
+                    </div>
+                    <div class="foto-walikota fw-1 pe-4">
+                      <div class="news-in-right align-items-center position-relative my-1">
+                        <img src="assets/images/berita/news-1.jpg" class="me-2">
+                        <div class="cover-text-hype-bottom">
+                          <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                          <span class="">15 Foto | 26 Januari 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="foto-walikota fw-2 pe-4">
+                      <div class="news-in-right align-items-center position-relative my-1">
+                        <img src="assets/images/berita/news-1.jpg" class="me-2">
+                        <div class="cover-text-hype-bottom">
+                          <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                          <span class="">15 Foto | 26 Januari 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="foto-walikota fw-3 pe-4">
+                      <div class="news-in-right align-items-center position-relative my-1">
+                        <img src="assets/images/berita/news-1.jpg" class="me-2">
+                        <div class="cover-text-hype-bottom">
+                          <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                          <span class="">15 Foto | 26 Januari 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="foto-walikota fw-4 pe-4">
+                      <div class="news-in-right align-items-center position-relative my-1">
+                        <img src="assets/images/berita/news-1.jpg" class="me-2">
+                        <div class="cover-text-hype-bottom">
+                          <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                          <span class="">15 Foto | 26 Januari 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 pe-4 border-bottom pb-2 py-3 title-text">
+                      <h6>Transkripsi Pernyataan</h6>
+                    </div>
+                    <div class="col-11 pe-4 border-bottom ms-3">
+                      <div class="d-flex news-in-right align-items-center position-relative my-1">
+                        <div class="cover-text-hype-bottom">
+                          <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                          <span class="">15 Foto | 26 Januari 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-11 pe-4 border-bottom ms-3">
+                      <div class="d-flex news-in-right align-items-center position-relative my-1">
+                        <div class="cover-text-hype-bottom">
+                          <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                          <span class="">15 Foto | 26 Januari 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-11 pe-4 border-bottom ms-3">
+                      <div class="d-flex news-in-right align-items-center position-relative my-1">
+                        <div class="cover-text-hype-bottom">
+                          <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                          <span class="">15 Foto | 26 Januari 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-11 pe-4 border-bottom ms-3">
+                      <div class="d-flex news-in-right align-items-center position-relative my-1">
+                        <div class="cover-text-hype-bottom">
+                          <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                          <span class="">15 Foto | 26 Januari 2023</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="position-relative top-news-right">
+                        <div class="image-future-top-news-right">
+                          <img src="assets/images/berita/news-5.jpg" width="100%">
+                          <div class="ach-title position-absolute">
+                            <span class="text-white px-2 py-1">VIDEO</span>
+                          </div>
+                          <div class="position-absolute news-title">
+                            <h5><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1" class="text text-white">The standard Lorem Ipsum passage, used since the 1500s</a></h5>
+                            <small class="text-white">04:42 | Kamis, 26 Januari 2023 14:14 WIB</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12 pe-4 border-bottom pb-2 py-3 title-cover title-3 text-white">
+                          <h6>Video Kegiatan Walikota</h6>
+                        </div>
+                        <div class="pe-4 foto-walikota fw-1">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">04:42 | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pe-4 foto-walikota fw-2">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">04:42 | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pe-4 foto-walikota fw-3">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">04:42 | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="pe-4 foto-walikota fw-4">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">04:42 | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cnl">
+                <div class="content-news-left">
+                    <div class="position-relative top-news-left">
+                        <img src="assets/images/berita/news-5.jpg" width="100%">
+                        <div class="ach-title position-absolute">
+                            <span class="text-white px-2 py-1">TERKINI</span>
+                        </div>
+                        <div class="position-absolute news-title">
+                      <h2><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1" class="text text-white">The standard Lorem Ipsum passage, used since the 1500s</a></h2>
+                      <span class="text-white"><a href="" class="text-white" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Baca Selengkapnya</a> | Kamis, 26 Januari 2023 14:14 WIB</span>
+                        </div>
+                        <div class="mx-2 content-responsive mt-2 border-bottom pb-3">
+                      <h4><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1" class="text text-decoration-none">The standard Lorem Ipsum passage, used since the 1500s</a></h4>
+                      <span>Kamis, 26 Januari 2023 14:14 WIB</span>
+                      <p class="mt-3">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                      </p>
+                        </div>
+                    </div>
+                    <br>
+                    <span class="span-title text-white px-3 py-1">
+                        Siaran Pers
+                    </span>
+                    <br>
+                    <div class="second-news-left">
+                        <div class="mx-2">
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                          <div class="news-middle my-2">
+                            <div class="middle-img">
+                              <img src="assets/images/berita/news-3.jpg" width="100%">
+                            </div>
+                            <div class="middle-text">
+                              <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                              <small >Kamis, 26 Januari 2023</small><small class="time-small"> 14:07 WIB</small>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="ms-2 ps-3 border-bottom pb-2 py-3 title-cover title-1">
+                        <h6>Aktivitas Ibu Negara</h6>
+                    </div>
+                    <div class="position-relative bottom-news-left">
+                        <img src="assets/images/berita/news-5.jpg" class="ibu-negara" width="100%">
+                        <div class="ach-title position-absolute">
+                          <span class="text-white px-2 py-1">IBU NEGARA</span>
+                        </div>
+                        <div class="position-absolute news-title">
+                          <h2 class="text text-white">The standard Lorem Ipsum passage, used since the 1500s</h2>
+                          <span class="text-white">Aktivitas Ibu Negara Republik Indonesia</span>
+                        </div>
+                        <div class="news-bottom">
+                          <div class="row mx-2">
+                            <div class="news-middle my-2">
+                              <div class="bottom-img">
+                                <img src="assets/images/berita/news-3.jpg" width="100%">
+                              </div>
+                              <div class="bottom-text">
+                                <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                                <small >Kamis, 26 Januari 2023</small> <small class="time-small">14:07 WIB</small>
+                              </div>
+                            </div>
+                            <div class="news-middle my-2">
+                              <div class="bottom-img">
+                                <img src="assets/images/berita/news-3.jpg" width="100%">
+                              </div>
+                              <div class="bottom-text">
+                                <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                                <small >Kamis, 26 Januari 2023</small> <small class="time-small">14:07 WIB</small>
+                              </div>
+                            </div>
+                            <div class="news-middle my-2">
+                              <div class="bottom-img">
+                                <img src="assets/images/berita/news-3.jpg" width="100%">
+                              </div>
+                              <div class="bottom-text">
+                                <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                                <small >Kamis, 26 Januari 2023</small> <small class="time-small">14:07 WIB</small>
+                              </div>
+                            </div>
+                            <div class="news-middle my-2">
+                              <div class="bottom-img">
+                                <img src="assets/images/berita/news-3.jpg" width="100%">
+                              </div>
+                              <div class="bottom-text">
+                                <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">Buka Rakornas Transisi PC-PEN, Walikota Apresiasi Kerja Keras Jajaran Tangani ...</a><br><br>
+                                <small >Kamis, 26 Januari 2023</small> <small class="time-small">14:07 WIB</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <br><br><br><br>
+                </div>
+                <div class="content-news-right">
+                  <div class="position-relative top-news-right">
+                    <div class="image-future-top-news-right">
+                      <img src="assets/images/berita/news-5.jpg" width="100%">
+                      <div class="ach-title position-absolute">
+                        <span class="text-white px-2 py-1">FOTO</span>
+                      </div>
+                      <div class="position-absolute news-title">
+                        <h5><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1" class="text text-white">The standard Lorem Ipsum passage, used since the 1500s</a></h5>
+                        <small class="text-white">6 Foto | Kamis, 26 Januari 2023 14:14 WIB</small>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-12 pe-4 border-bottom pb-2 py-3 title-cover title-2 text-white">
+                      <h6>Foto Kegiatan Walikota</h6>
+                    </div>
+                    <div>
+                        <div class="float-start col-5 ms-2 me-3">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">15 Foto | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="float-start col-5 ms-3 me-2">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">15 Foto | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="float-start col-5 ms-2 me-3">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">15 Foto | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="float-start col-5 ms-3 me-2">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">15 Foto | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div>
+                        <div class="col-12 pe-4 border-bottom pb-2 py-3 title-text">
+                          <h6>Transkripsi Pernyataan</h6>
+                        </div>
+                        <div class="col-11 pe-4 border-bottom ms-3">
+                          <div class="d-flex news-in-right align-items-center position-relative my-1">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">15 Foto | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-11 pe-4 border-bottom ms-3">
+                          <div class="d-flex news-in-right align-items-center position-relative my-1">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">15 Foto | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-11 pe-4 border-bottom ms-3">
+                          <div class="d-flex news-in-right align-items-center position-relative my-1">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">15 Foto | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-11 pe-4 border-bottom ms-3">
+                          <div class="d-flex news-in-right align-items-center position-relative my-1">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">15 Foto | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="position-relative top-news-right">
+                        <div class="image-future-top-news-right">
+                          <img src="assets/images/berita/news-5.jpg" width="100%">
+                          <div class="ach-title position-absolute">
+                            <span class="text-white px-2 py-1">VIDEO</span>
+                          </div>
+                          <div class="position-absolute news-title">
+                            <h5><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1" class="text text-white">The standard Lorem Ipsum passage, used since the 1500s</a></h5>
+                            <small class="text-white">04:42 | Kamis, 26 Januari 2023 14:14 WIB</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="">
+                        <div class="col-12 pe-4 border-bottom pb-2 py-3 title-cover title-3 text-white">
+                          <h6>Video Kegiatan Walikota</h6>
+                        </div>
+                        <div class="float-start col-5 ms-2 me-3">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">04:42 | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="float-start col-5 ms-3 me-2">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">04:42 | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="float-start col-5 ms-2 me-3">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">04:42 | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="float-start col-5 ms-3 me-2">
+                          <div class="news-in-right align-items-center position-relative my-1">
+                            <img src="assets/images/berita/news-1.jpg" class="me-2">
+                            <div class="cover-text-hype-bottom">
+                              <a class="text-decoration-none text-hype-bottom" href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a><br><br>
+                              <span class="">04:42 | 26 Januari 2023</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <footer class="mt-lg-5 mt-4">
+        <div>
+          <div class="footer-menu row">
+              <div class="col-lg-2 border-end img-footer">
+                  <img src="assets/images/html5-logo.png" class="w-100">
+              </div>
+              <div class="col-lg-4 with-resp">
+                  <span><small>Dikelola oleh :</small></span><br>
+                  <span><big>BIRO PERS, MEDIA, DAN INFORMASI SEKRETARIAT PRESIDEN</big></span><br>
+                  <span><small>Jl. Veteran No. 16 Jakarta Pusat, Kode Pos 10110</small></span><br>
+              </div>
+              <div class="col-lg-2 menu-bottom">
+                  <span><big>WALIKOTA</big></span><br>
+                  <a href="walikota.html" class="text-decoration-none"><span><small>Walikota</small></span></a><br>
+                  <a href="wakil-walikota.html" class="text-decoration-none"><span><small>Wakil Walikota</small></span></a>
+              </div>
+              <div class="col-lg-2 menu-bottom">
+                  <span><big>PERS</big></span><br>
+                  <a href="siaran.html" class="text-decoration-none"><span><small>Siaran Pers</small></span></a><br>
+                  <a href="foto.html" class="text-decoration-none"><span><small>Foto Walikota</small></span></a><br>
+                  <a href="video.html" class="text-decoration-none"><span><small>Video Walikota</small></span></a><br>
+                  <a href="transkrip.html" class="text-decoration-none"><span><small>Transkrip</small></span></a><br>
+              </div>
+              <div class="col-lg-2 menu-bottom">
+                  <span><big>PEMERINTAHAN</big></span><br>
+                  <a href="kabinet-indonesia-maju.html" class="text-decoration-none"><span><small>Kabinet Indonesia Maju</small></span></a><br>
+                  <a href="capaian-kinerja.html" class="text-decoration-none"><span><small>Capaian Kinerja</small></span></a><br>
+              </div>
+          </div>
+          <div class="col-lg-4 with-resp footer-resp">
+              <span><small>Dikelola oleh :</small></span><br>
+              <span><big>BIRO PERS, MEDIA, DAN INFORMASI SEKRETARIAT PRESIDEN</big></span><br>
+              <span><small>Jl. Veteran No. 16 Jakarta Pusat, Kode Pos 10110</small></span><br>
+          </div>
+          <div class="menu-bottom-resp text-center">
+            <a href="walikota.html" class="text-decoration-none"><span><small>Walikota</small></span></a> - <a href="wakil-walikota.html" class="text-decoration-none"><span><small>Wakil Walikota</small></span></a><br>
+            <a href="siaran.html" class="text-decoration-none"><span><small>Siaran Pers</small></span></a> - <a href="foto.html" class="text-decoration-none"><span><small>Foto Walikota</small></span></a> - <a href="video.html" class="text-decoration-none"><span><small>Video Walikota</small></span></a> - <a href="transkrip.html" class="text-decoration-none"><span><small>Transkrip</small></span></a><br>
+            <a href="kabinet-indonesia-maju.html" class="text-decoration-none"><span><small>Kabinet Indonesia Maju</small></span></a> - <a href="capaian-kinerja.html" class="text-decoration-none"><span><small>Capaian Kerja</small></span></a>
+          </div>
+          <hr>
+          <div class="copyright">
+              &copy; 2019-2023 Kepala Daerah, Walikota
+          </div>
+        </div>
+    </footer>
+
+  <script type="text/javascript">
+      document.getElementById('tgl-clck').addEventListener('click', function(){
+        document.getElementById('open').classList.toggle('d-none')
+        document.getElementById('close').classList.toggle('d-none')
+      })
+  </script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

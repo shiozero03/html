@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>walikota.go.id</title>
+  <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/fontawesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/css/index.css">
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/vendor/css/siaran.css">
+  <link rel="shortcut icon"href="../assets/images/html5-logo.png">
+</head>
+<body>
+    <header class="bg-white w-100 fixed-top">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="../index.html">
+              <img src="../assets/images/html5-logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+              <span class="mb-2">WALIKOTA.GO.ID</span>
+            </a>
+            <button class="navbar-toggler" id="tgl-clck" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars text-white" id="open"></i>
+              <i class="fas fa-close text-white d-none" id="close"></i>
+            </button>
+            <div class="collapse px-lg-2 px-4 navbar-collapse" id="navbarSupportedContent" >
+                <form class="position-relative search d-lg-none" role="search">
+                <input class="form-control cari" type="text" placeholder="PENCARIAN" aria-label="Search">
+                <button class="btn position-absolute text-dark" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link py-lg-3 py-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    WALIKOTA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../profil-walikota.html">Walikota</a></li>
+                    <li><a class="dropdown-item" href="../profil-wakil-walikota.html">Wakil Walikota</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link py-lg-3 py-2 px-lg-3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PERS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../siaran.html">Siaran Pers</a></li>
+                    <li><a class="dropdown-item" href="../foto.html">Foto Walikota</a></li>
+                    <li><a class="dropdown-item" href="../video.html">Video Walikota</a></li>
+                    <li><a class="dropdown-item" href="#">Transkrip Pernyataan</a></li>                
+                  </ul>
+                </li>
+                <li class="nav-item dropdown me-lg-3">
+                  <a class="nav-link py-lg-3 py-2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PEMERINTAHAN
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Kabinet Indonesia Maju</a></li>
+                    <li><a class="dropdown-item" href="#">Capaian Kinerja</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="position-relative search d-lg-block d-none" role="search">
+                <input class="form-control cari" type="text" placeholder="PENCARIAN" aria-label="Search">
+                <button class="btn position-absolute text-white" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    </header>
+      <div class="position-relative content bg-white">
+        <div class="py-3 px-md-4 artikel-view container">
+          <a href="../video.html" class="text-decoration-none text-danger">Video /</a> The standard Lorem Ipsum passage, used since the 1500s
+          <hr class="my-2">
+          <video controls class="w-100">
+            <source src="../assets/images/galeri/video/video.mp4" type="video/mp4">
+            Browser tidak mendukung tag video
+          </video>
+          <div class="view-content">
+            <h3><strong>The standard Lorem Ipsum passage, used since the 1500s</strong></h3>
+            <span>14:23 | Kamis, 26 Januari 2023 14:14 WIB</span>
+          </div>
+        </div>
+      </div>
+      <div class="content position-relative mt-2 p-4 bg-white">
+        <form id="comentar" action="#">
+          <h2 class="border-bottom border-dark py-2">Komentar</h2>
+          <small><em>Silahkan Berikan Kritik dan Saran Anda Untuk Membuat Kami Lebih Baik Kedepannya</em></small>
+          <div class="form-group mb-2">
+            <label><strong>Email <b class="text-danger">*</b></strong></label>
+            <input type="email" name="email"  class="form-control" placeholder="youremail@gmail.com">
+          </div>
+          <div class="form-group mb-2">
+            <label><strong>Subject <b class="text-danger">*</b></strong></label>
+            <input type="text" name="subject"  class="form-control" placeholder="your subject here">
+          </div>
+          <div class="form-group mb-2">
+            <label><strong>Comment <b class="text-danger">*</b></strong></label>
+            <textarea placeholder="your comment here" name="comment"  class="form-control"></textarea>
+          </div>
+          <div class="form-group mb-2">
+            <input type="submit" name="submit" class="form-control submit-comment-berita btn btn-white btn-outline-danger" value="KIRIM">
+          </div>
+        </form>
+      </div>
+    <footer class="mt-lg-5 mt-4">
+        <div>
+          <div class="footer-menu row">
+              <div class="col-lg-2 border-end img-footer">
+                  <img src="assets/images/html5-logo.png" class="w-100">
+              </div>
+              <div class="col-lg-4 with-resp">
+                  <span><small>Dikelola oleh :</small></span><br>
+                  <span><big>BIRO PERS, MEDIA, DAN INFORMASI SEKRETARIAT PRESIDEN</big></span><br>
+                  <span><small>Jl. Veteran No. 16 Jakarta Pusat, Kode Pos 10110</small></span><br>
+              </div>
+              <div class="col-lg-2 menu-bottom">
+                  <span><big>WALIKOTA</big></span><br>
+                  <a href="../profil-walikota.html" class="text-decoration-none"><span><small>Walikota</small></span></a><br>
+                  <a href="../profil-wakil-walikota.html" class="text-decoration-none"><span><small>Wakil Walikota</small></span></a>
+              </div>
+              <div class="col-lg-2 menu-bottom">
+                  <span><big>PERS</big></span><br>
+                  <a href="../siaran.html" class="text-decoration-none"><span><small>Siaran Pers</small></span></a><br>
+                  <a href="../foto.html" class="text-decoration-none"><span><small>Foto Walikota</small></span></a><br>
+                  <a href="../video.html" class="text-decoration-none"><span><small>Video Walikota</small></span></a><br>
+                  <a href="#" class="text-decoration-none"><span><small>Transkrip</small></span></a><br>
+              </div>
+              <div class="col-lg-2 menu-bottom">
+                  <span><big>PEMERINTAHAN</big></span><br>
+                  <a href="#" class="text-decoration-none"><span><small>Kabinet Indonesia Maju</small></span></a><br>
+                  <a href="#" class="text-decoration-none"><span><small>Capaian Kinerja</small></span></a><br>
+              </div>
+          </div>
+          <div class="col-lg-4 with-resp footer-resp">
+              <span><small>Dikelola oleh :</small></span><br>
+              <span><big>BIRO PERS, MEDIA, DAN INFORMASI SEKRETARIAT PRESIDEN</big></span><br>
+              <span><small>Jl. Veteran No. 16 Jakarta Pusat, Kode Pos 10110</small></span><br>
+          </div>
+          <div class="menu-bottom-resp text-center">
+            <a href="../profil-walikota.html" class="text-decoration-none"><span><small>Walikota</small></span></a> - <a href="../profil-wakil-walikota.html" class="text-decoration-none"><span><small>Wakil Walikota</small></span></a><br>
+            <a href="../siaran.html" class="text-decoration-none"><span><small>Siaran Pers</small></span></a> - <a href="../foto.html" class="text-decoration-none"><span><small>Foto Walikota</small></span></a> - <a href="../video.html" class="text-decoration-none"><span><small>Video Walikota</small></span></a> - <a href="#" class="text-decoration-none"><span><small>Transkrip</small></span></a><br>
+            <a href="#" class="text-decoration-none"><span><small>Kabinet Indonesia Maju</small></span></a> - <a href="#" class="text-decoration-none"><span><small>Capaian Kerja</small></span></a>
+          </div>
+          <hr>
+          <div class="copyright">
+              &copy; 2019-2023 Kepala Daerah, Walikota
+          </div>
+        </div>
+    </footer>
+
+  <script type="text/javascript">
+      document.getElementById('tgl-clck').addEventListener('click', function(){
+        document.getElementById('open').classList.toggle('d-none')
+        document.getElementById('close').classList.toggle('d-none')
+      })
+  </script>
+    <script type="text/javascript" src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

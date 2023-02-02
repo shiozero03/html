@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KEPALA DAERAH - HTML : BERITA</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/berita.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/toastr.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/confirm.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/flatpickr.css">
+
+    <link rel="shortcut icon"href="assets/images/html5-logo.png">
+  </head>
+  <body>
+
+    <!-- Header Fixed Top -->
+      <header class="bg-white position-fixed w-100">
+        <nav class="nav-top">
+            <div class="cover-navbar pt-lg-2 pb-lg-3 position-relative">
+                <a class="d-flex align-items-center text-white col-lg-3 col-10 text-decoration-none mt-2 " href="index.html">
+                    <img src="assets/images/html5-logo.png" alt="Logo" class="logo-navbar d-inline-block align-text-top">
+                    <h5 class="ms-md-1 ms-1 mt-2">WALIKOTA.GO.ID</h5> 
+                </a>
+                <div class="position-absolute toggle-cover d-lg-none">
+                    <button id="open" class="toggle-button">
+                        <i class="fas fa-bars text-white"></i>
+                    </button>
+                    <button id="close" class="toggle-button d-none" class="d-none">
+                        <i class="fas fa-close text-white"></i>
+                    </button>
+                </div>
+                <div class="menu-top-navbar d-lg-block d-none position-absolute">
+                    <ul>
+                        <li class="d-lg-inline-block position-relative">
+                            <a onclick="walikota()" class="walikota-menu text-decoration-none text-white"><h6 class="px-2 px-md-3" >WALIKOTA</h6></a>
+                            <ul id="menudropdown-0" class="dd-top d-none position-absolute bg-white pt-lg-3 pb-lg-1">
+                                <li class="d-block px-lg-4">
+                                    <a href="" class="text-decoration-none text-dark">
+                                        <h6 class="px-3 py-2">Walikota</h6>
+                                    </a>
+                                </li>
+                                <li class="d-block px-lg-4">
+                                    <a href="" class="text-decoration-none text-dark">
+                                        <h6 class="px-3 py-2">Wakil Walikota</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="d-lg-inline-block position-relative">
+                            <a onclick="pers()" class="pers-menu text-decoration-none text-white"><h6 class="px-2 px-md-3 pers-menu-h6" >PERS</h6></a>
+                            <ul id="menudropdown-1" class="dd-top d-none position-absolute bg-white pt-lg-3 pb-lg-1">
+                                <li class="d-block ps-lg-4 pe-lg-5">
+                                    <a href="" class="menu-dd-top text-decoration-none text-dark">
+                                        <h6 class="px-3 py-2">Siaran Pers</h6>
+                                    </a>
+                                </li>
+                                <li class="d-block ps-lg-4 pe-lg-5">
+                                    <a href="" class="menu-dd-top text-decoration-none text-dark">
+                                        <h6 class="px-3 py-2">Foto Walikota</h6>
+                                    </a>
+                                </li>
+                                <li class="d-block ps-lg-4 pe-lg-5">
+                                    <a href="" class="menu-dd-top text-decoration-none text-dark">
+                                        <h6 class="px-3 py-2">Video Walikota</h6>
+                                    </a>
+                                </li>
+                                <li class="d-block ps-lg-4 pe-lg-5">
+                                    <a href="" class="menu-dd-top text-decoration-none text-dark">
+                                        <h6 class="px-3 py-2">Transkrip Pernyataan</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="d-lg-inline-block position-relative">
+                            <a onclick="pemerintahan()" class="pemerintahan-menu text-decoration-none text-white"><h6 class="px-2 px-md-3 pemerintahan-menu-h6">PEMERINTAHAN</h6></a>
+                            <ul id="menudropdown-2" class="d-none dd-top position-absolute bg-white pt-lg-3 pb-lg-1">
+                                <li class="d-block px-lg-5">
+                                    <a href="" class="menu-dd-top text-decoration-none text-dark">
+                                        <h6 class="px-3 py-2">Kabinet Indonesia Maju</h6>
+                                    </a>
+                                </li>
+                                <li class="d-block px-lg-5">
+                                    <a href="" class="menu-dd-top text-decoration-none text-dark">
+                                        <h6 class="px-3 py-2">Capaian Kinerja</h6>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="d-lg-inline-block position-relative">
+                            <a class="text-decoration-none text-white">
+                                <h6 class="mx-2 mx-md-3 position-relative">
+                                    <form action="" method="get" class="mb-5">
+                                        <input type="text" name="" class="pencarian text-white ps-2 py-2" placeholder="PENCARIAN">
+                                        <button class="searching position-absolute text-white"><i class="fas fa-search"></i></button>
+                                    </form>
+                                </h6>
+                            </a>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </nav>
+        <nav class="menu-responsive-bar d-lg-none d-none" id="resp-menu">
+            <div>
+                <form class="px-2 pt-3" action="" method="get">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="PENCARIAN" aria-describedby="search-responsive">
+                        <button type="submit" class="input-group-text" id="search-responsive"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <div>
+                <div class="position-relative" onclick="walikotaResp()">
+                    <a class="text-decoration-none text-dark"><h5 class="px-3 py-2">WALIKOTA</h5></a>
+                    <i id="walilkotaresp-i-1" class="fas fa-chevron-right position-absolute i-dd-resp" ></i>
+                    <i id="walilkotaresp-i2-1" class="d-none fas fa-chevron-down position-absolute i-dd-resp" ></i>
+                </div>
+                <div id="walikotaresp-1" class="d-none">
+                    <div>
+                        <a href="" class="text-decoration-none text-dark"><h5 class="px-4 py-2">Walikota</h5></a>
+                    </div>
+                    <div class="menu-dd-resp-not-1">
+                        <a href="" class="text-decoration-none text-dark"><h5 class="px-4 py-2">Wakil Walikota</h5></a>
+                    </div>
+                </div>
+            </div> 
+            <div>
+                <div class="position-relative" onclick="persResp()">
+                    <a class="text-decoration-none text-dark"><h5 class="px-3 py-2">PERS</h5></a>
+                    <i id="persresp-i-1" class="fas fa-chevron-right position-absolute i-dd-resp" ></i>
+                    <i id="persresp-i2-1" class="d-none fas fa-chevron-down position-absolute i-dd-resp" ></i>
+                </div>
+                <div id="persresp-1" class="d-none">
+                    <div>
+                        <a href="" class="text-decoration-none text-dark"><h5 class="px-4 py-2">Siaran Pers</h5></a>
+                    </div>
+                    <div class="menu-dd-resp-not-1">
+                        <a href="" class="text-decoration-none text-dark"><h5 class="px-4 py-2">Foto Walikota</h5></a>
+                    </div>
+                    <div class="menu-dd-resp-not-1">
+                        <a href="" class="text-decoration-none text-dark"><h5 class="px-4 py-2">Video Walikota</h5></a>
+                    </div>
+                    <div class="menu-dd-resp-not-1">
+                        <a href="" class="text-decoration-none text-dark"><h5 class="px-4 py-2">Transkip Pernyataan</h5></a>
+                    </div>
+                </div>
+            </div> 
+            <div>
+                <div class="position-relative" onclick="pemerintahanResp()">
+                    <a class="text-decoration-none text-dark"><h5 class="px-3 py-2">PEMERINTAHAN</h5></a>
+                    <i id="pemerintahanresp-i-1" class="fas fa-chevron-right position-absolute i-dd-resp" ></i>
+                    <i id="pemerintahanresp-i2-1" class="d-none fas fa-chevron-down position-absolute i-dd-resp" ></i>
+                </div>
+                <div id="pemerintahan-1" class="d-none">
+                    <div>
+                        <a href="" class="text-decoration-none text-dark"><h5 class="px-4 py-2">Kabinet Indonesia Maju</h5></a>
+                    </div>
+                    <div class="menu-dd-resp-not-1">
+                        <a href="" class="text-decoration-none text-dark"><h5 class="px-4 py-2">Capaian Kerja</h5></a>
+                    </div>
+                </div>
+            </div>            
+        </nav>
+      </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+      <div class="position-relative content">
+        <div class="bg-white">
+
+          <!-- Berita Bagian Atas -->
+            <div class="mx-md-2 cover-berita-atas">
+              <br>
+              <div class="row">
+                <div class="col-md-3 cover-berita">
+                  <div class="mx-lg-2 mx-md-1">
+                    <div class="d-md-flex align-items-center position-relative berita-atas">
+                      <img src="assets/images/berita/news-3.jpg" width="48" height="48">
+                      <div class="mx-2 cover-text position-absolute">
+                        <p class="text"><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a></p>
+                        <p class="tanggal">Selasa, 10 Januari 2023 19:37 WIB</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 cover-berita">
+                  <div class="mx-lg-2 mx-md-1">
+                    <div class="d-md-flex align-items-center position-relative berita-atas">
+                      <img src="assets/images/berita/news-3.jpg" width="48" height="48">
+                      <div class="mx-2 cover-text position-absolute">
+                        <p class="text"><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a></p>
+                        <p class="tanggal">Selasa, 10 Januari 2023 19:37 WIB</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 cover-berita">
+                  <div class="mx-lg-2 mx-md-1">
+                    <div class="d-md-flex align-items-center position-relative berita-atas">
+                      <img src="assets/images/berita/news-3.jpg" width="48" height="48">
+                      <div class="mx-2 cover-text position-absolute">
+                        <p class="text"><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a></p>
+                        <p class="tanggal">Selasa, 10 Januari 2023 19:37 WIB</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="mx-lg-2 mx-md-1">
+                    <div class="d-md-flex align-items-center position-relative berita-atas">
+                      <img src="assets/images/berita/news-3.jpg" width="48" height="48">
+                      <div class="mx-2 cover-text position-absolute">
+                        <p class="text"><a href="berita/view.html?title=what-is-lorem-ipsum?&id=1">The standard Lorem Ipsum passage, used since ...</a></p>
+                        <p class="tanggal">Selasa, 10 Januari 2023 19:37 WIB</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- End Berita Bagian Atas -->
+
+          <div class="row py-3">
+            <div class="col-md-9 berita-utama">
+              <!-- Berita Utama -->
+                <div class="first-news">
+                  <div>
+                    <div class="terkini position-relative">
+                      <img src="assets/images/berita/news-5.jpg" width="100%">
+                      <div class="position-absolute text-terkini">
+                        <p class="text-white p-1"><b>TERKINI</b></p>
+                      </div>
+                      <div class="position-absolute text-berita-terkini">
+                        <h2 class="text-white p-1">
+                          <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1" class="text-white"><b>Masa Transisi Pandemi, KPCPEN Kembalikan Program ke Kementerian</b></a>
+                        </h2>
+                        <p class="text-white">
+                          <a href="berita/view.html?title=what-is-lorem-ipsum?&id=1" class="text-white">Baca Selengkapnya</a> | Kamis, 26 Januari 2023 14:14 WIB</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-responsive">
+                    <h5>Masa Transisi Pandemi, KPCPEN Kembalikan Program ke Kementerian</h5>
+                    <p class="date">Kamis, 26 Januari 2023 14:14 WIB</p>
+                    <p class="content-text">Menteri Koordinator Bidang Perekonomian Airlangga Hartarto menyebut saat ini Indonesia memasuki periode known uncertainty di mana ketidakpastian masih terjadi dan menimbulkan sejumlah ancaman.</p>
+                  </div>
+              <br>
+                </div>
+              <!-- End Berita Utama -->
+              <div>
+                <div class="siaran-pers">
+                  <h5 class="text-white px-3 py-2">
+                    Siaran Pers
+                  </h5>
+                </div>
+                <br>
+                <div>
+                  <div class="row px-4">
+                    <div class="berita-siaran">
+                      <div>
+                        <img src="assets/images/berita/news-3.jpg">
+                        <div class="keterangan-siaran">
+                          <p class="text-siaran">Presiden Paparkan Sejumlah Langkah Sukses Pemerintah Tangani Pandemi</p>
+                          <p class="tanggal-siaran">Kamis, 26 Januari 2023 14:07 WIB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="berita-siaran">
+                      <div>
+                        <img src="assets/images/berita/news-3.jpg">
+                        <div class="keterangan-siaran">
+                          <p class="text-siaran">Presiden Paparkan Sejumlah Langkah Sukses Pemerintah Tangani Pandemi</p>
+                          <p class="tanggal-siaran">Kamis, 26 Januari 2023 14:07 WIB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="berita-siaran">
+                      <div>
+                        <img src="assets/images/berita/news-3.jpg">
+                        <div class="keterangan-siaran">
+                          <p class="text-siaran">Presiden Paparkan Sejumlah Langkah Sukses Pemerintah Tangani Pandemi</p>
+                          <p class="tanggal-siaran">Kamis, 26 Januari 2023 14:07 WIB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="berita-siaran">
+                      <div>
+                        <img src="assets/images/berita/news-3.jpg">
+                        <div class="keterangan-siaran">
+                          <p class="text-siaran">Presiden Paparkan Sejumlah Langkah Sukses Pemerintah Tangani Pandemi</p>
+                          <p class="tanggal-siaran">Kamis, 26 Januari 2023 14:07 WIB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="berita-siaran">
+                      <div>
+                        <img src="assets/images/berita/news-3.jpg">
+                        <div class="keterangan-siaran">
+                          <p class="text-siaran">Presiden Paparkan Sejumlah Langkah Sukses Pemerintah Tangani Pandemi</p>
+                          <p class="tanggal-siaran">Kamis, 26 Januari 2023 14:07 WIB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="berita-siaran">
+                      <div>
+                        <img src="assets/images/berita/news-3.jpg">
+                        <div class="keterangan-siaran">
+                          <p class="text-siaran">Presiden Paparkan Sejumlah Langkah Sukses Pemerintah Tangani Pandemi</p>
+                          <p class="tanggal-siaran">Kamis, 26 Januari 2023 14:07 WIB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="berita-siaran">
+                      <div>
+                        <img src="assets/images/berita/news-3.jpg">
+                        <div class="keterangan-siaran">
+                          <p class="text-siaran">Presiden Paparkan Sejumlah Langkah Sukses Pemerintah Tangani Pandemi</p>
+                          <p class="tanggal-siaran">Kamis, 26 Januari 2023 14:07 WIB</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="berita-siaran">
+                      <div>
+                        <img src="assets/images/berita/news-3.jpg">
+                        <div class="keterangan-siaran">
+                          <p class="text-siaran">Presiden Paparkan Sejumlah Langkah Sukses Pemerintah Tangani Pandemi</p>
+                          <p class="tanggal-siaran">Kamis, 26 Januari 2023 14:07 WIB</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mx-3 responsive-hr">
+                </div>
+              </div>
+              <br>
+              <br>
+              <div>
+                hello
+              </div>
+            </div>
+              <div class="float-lg-start col-lg-8 left-news">
+                <div class="berita-left pe-lg-3">
+
+                </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+      <footer class="mt-5">
+        <div>
+            <div class="row footer-menu">
+                <div class="col-lg-2 border-end img-footer">
+                    <img src="assets/images/html5-logo.png" class="w-100">
+                </div>
+                <div class="col-lg-4 with-resp">
+                    <span><small>Dikelola oleh :</small></span><br>
+                    <span><big>BIRO PERS, MEDIA, DAN INFORMASI SEKRETARIAT PRESIDEN</big></span><br>
+                    <span><small>Jl. Veteran No. 16 Jakarta Pusat, Kode Pos 10110</small></span><br>
+                </div>
+                <div class="col-lg-2 menu-bottom">
+                    <span><big>WALIKOTA</big></span><br>
+                    <a href="" class="text-decoration-none"><span><small>Walikota</small></span></a><br>
+                    <a href="" class="text-decoration-none"><span><small>Wakil Walikota</small></span></a>
+                </div>
+                <div class="col-lg-2 menu-bottom">
+                    <span><big>PERS</big></span><br>
+                    <a href="" class="text-decoration-none"><span><small>Siaran Pers</small></span></a><br>
+                    <a href="" class="text-decoration-none"><span><small>Foto Walikota</small></span></a><br>
+                    <a href="" class="text-decoration-none"><span><small>Video Walikota</small></span></a><br>
+                    <a href="" class="text-decoration-none"><span><small>Transkrip</small></span></a><br>
+                </div>
+                <div class="col-lg-2 menu-bottom">
+                    <span><big>PEMERINTAHAN</big></span><br>
+                    <a href="" class="text-decoration-none"><span><small>Kabiner Indonesia Maju</small></span></a><br>
+                    <a href="" class="text-decoration-none"><span><small>Capaian Kinerja</small></span></a><br>
+                </div>
+            </div>
+            <div class="menu-bottom-resp text-center">
+              <a href="" class="text-decoration-none"><span><small>Walikota</small></span></a> - <a href="" class="text-decoration-none"><span><small>Wakil Walikota</small></span></a><br>
+              <a href="" class="text-decoration-none"><span><small>Siaran Pers</small></span></a> - <a href="" class="text-decoration-none"><span><small>Foto Walikota</small></span></a> - <a href="" class="text-decoration-none"><span><small>Video Walikota</small></span></a> - <a href="" class="text-decoration-none"><span><small>Transkrip</small></span></a><br>
+              <a href="" class="text-decoration-none"><span><small>Kabinet Indonesia Maju</small></span></a> - <a href="" class="text-decoration-none"><span><small>Capaian Kerja</small></span></a>
+            </div>
+            <hr>
+            <div class="copyright">
+                &copy; 2019-2023 Kepala Daerah, Walikota
+            </div>
+        </div>
+      </footer>
+    <!-- End Footer -->
+
+    <script type="text/javascript" src="assets/vendor/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/plugin.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/confirm.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/flatpickr.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/method.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/sweetalert.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/toastr.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/toggle-menu.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

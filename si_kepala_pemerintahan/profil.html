@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KEPALA DAERAH - HTML : PROFIL</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/profil.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/toastr.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/confirm.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/flatpickr.css">
+
+    <link rel="shortcut icon"href="assets/images/html5-logo.png">
+  </head>
+  <body>
+
+    <!-- Header Fixed Top -->
+      <header class="fixed-top">
+
+        <!-- Navbar Menu -->
+          <nav class="navbar-top">
+            <div class="navbar-menu container py-md-3 py-1 position-relative">
+              <div class="d-lg-none toggle-navbar rounded pb-1 px-1 position-absolute mt-1">
+                <i id="close" class="fas fa-close text-white d-none me-1"></i>
+                <i id="open" class="fas fa-bars text-white"></i>
+              </div>
+              <a class="d-flex align-items-center text-white text-decoration-none" href="#">
+                <img src="assets/images/html5-logo.png" alt="Logo" width="50" height="50" class="logo-navbar d-inline-block align-text-top">
+                <h5 class="ms-md-1 ms-1 mt-2">PEMERINTAHAN DAERAH</h5> 
+              </a>
+              <div class="menu-top-navbar d-lg-block d-none pb-1 px-1 position-absolute mt-1">
+                <ul class="mt-4">
+                  <a href="index.html" class="px-2 px-md-2 py-lg-5 text-decoration-none">
+                    <li class="d-lg-inline-block d-block">
+                      <h6>BERANDA</h6>
+                    </li>
+                  </a>
+                  <a href="berita.html" class="px-2 px-md-2 py-lg-5 text-decoration-none">
+                    <li class="d-lg-inline-block d-block">
+                      <h6>BERITA</h6>
+                    </li>
+                  </a>
+                  <a href="galeri.html" class="px-2 px-md-2 py-lg-5 text-decoration-none">
+                    <li class="d-lg-inline-block d-block">
+                      <h6>GALERI</h6>
+                    </li>
+                  </a>
+                  <a href="profil.html" class="px-2 px-md-2 py-lg-5 text-decoration-none active">
+                    <li class="d-lg-inline-block d-block">
+                      <h6>PROFIL</h6>
+                    </li>
+                  </a>
+                  <a class="px-2 px-md-2 py-lg-5 text-decoration-none">
+                    <li class="d-lg-inline-block d-block">
+                      <h6 class="position-relative">
+                        <form action="" method="get">
+                          <input type="text" name="" class="pencarian text-white ps-2 py-2" placeholder="PENCARIAN">
+                          <button class="position-absolute text-white"><i class="fas fa-search"></i></button>
+                        </form>
+                      </h6>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Navbar Menu Responsive -->
+              <div id="resp-menu" class="d-none responsive-menu-navbar container position-relative">
+                <div class="menu-top-navbar d-lg-none position-absolute">
+                  <form class="px-2 pt-3" action="" method="get">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="PENCARIAN" aria-describedby="search-responsive">
+                      <button type="submit" class="input-group-text" id="search-responsive"><i class="fas fa-search"></i></button>
+                    </div>
+                  </form>
+                  <hr>
+                  <a href="index.html" class="text-decoration-none bg-secondary">
+                    <h6 class="w-100 px-2 py-3">BERANDA</h6>
+                  </a>
+                  <hr>
+                  <a href="berita.html" class="text-decoration-none bg-secondary">
+                    <h6 class="w-100 px-2 py-3">BERITA</h6>
+                  </a>
+                  <hr>
+                  <a href="galeri.html" class="text-decoration-none bg-secondary">
+                    <h6 class="w-100 px-2 py-3">GALERI</h6>
+                  </a>
+                  <hr>
+                  <a href="profil.html" class="text-decoration-none bg-secondary active">
+                    <h6 class="w-100 px-2 py-3">PROFIL</h6>
+                  </a>
+                  <hr>
+                  <br>
+                </div>
+              </div>
+            <!-- End Navbar Menu Responsive -->
+
+          </nav>
+        <!-- End Navbar Menu -->
+
+      </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+      <div class="position-relative navbar-menu container content rounded" style="overflow: hidden;">
+        <div class="py-md-5 py-3 px-md-5">
+          <div class="d-lg-flex align-items-center tentang-cover">
+            <div class="float-lg-start col-lg-3 d-lg-block text-center">
+              <img src="assets/images/html5-logo.png" class="logo-profil">
+            </div>
+            <div class="float-md-start">
+
+              <!-- Tentang -->
+                <div class="text-center text-tentang">
+                  <h3 class="border-bottom border-dark pb-2">
+                    <strong>TENTANG</strong>
+                  </h3>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  </p>
+                </div>
+              <!-- End Tentang -->
+
+              <div>
+                <div class="row tentang-profil">
+                  <div class="col-lg-6 col-12">
+
+                    <!-- Tujuan -->
+                      <div>
+                        <h3 class="border-bottom border-dark pb-2">
+                          <strong>Tujuan</strong>
+                        </h3>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                      </div>
+                    <!-- End Tujuan -->
+
+                    <!-- Visi -->
+                      <div>
+                        <h3 class="border-bottom border-dark pb-2">
+                          <strong>VISI</strong>
+                        </h3>
+                        <p>
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                      </div>
+                    <!-- End Visi -->
+
+                  </div>
+
+                  <!-- Misi -->
+                    <div class="col-lg-6 col-12">
+                      <h3 class="border-bottom border-dark pb-2">
+                        <strong>MISI</strong>
+                      </h3>
+                      <p>
+                        <ol>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        </ol>
+                      </p>
+                    </div>
+                  <!-- End Misi -->
+
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+
+          <!-- Kepala Daerah -->
+            <div class="kepala-daerah mt-md-5 mt-3">
+              <h3 class="border-bottom border-dark pb-2 text-center">
+                <strong>KEPALA DAERAH</strong>
+              </h3>
+              <div class="d-md-flex align-items-center mx-lg-3">
+                <div class="foto-kepala col-lg-3 col-md-3 ms-lg-3">
+                  <img src="assets/images/profil.jpg" class="w-100">
+                </div>
+                <div class="biografi ms-lg-4 me-lg-3 ms-md-3">
+                  <h4 class="d-lg-block d-none">
+                    <strong>BIOGRAFI</strong>
+                  </h4>
+                  <hr class="my-2 d-lg-block d-none">
+                  <p class="mt-md-3 mt-lg-1">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          <!-- End Kepala Daerah -->
+
+          <div class="kepala-daerah mt-md-5 mt-3">
+            <h3 class="border-bottom border-dark pb-2 text-center">
+              <strong>STRUKTUR ORGANISASI DAERAH</strong>
+            </h3>
+            <div>
+              <div>
+                <img src="assets/images/bagan.png" class="w-100">
+              </div>
+            </div>
+          </div>
+
+          <div class="profil-daerah mt-md-5 mt-3">
+            <h3 class="border-bottom border-dark pb-2 text-center">
+              <strong>PROFIL SINGKAT</strong>
+            </h3>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <div>
+              <div class="profil-table">
+                <table class="table table-bordered border-dark">
+                  <tr>
+                    <th>PROFIL TITLE</th>
+                    <td>: PROFIL CONTENT</td>
+                  </tr>
+                  <tr>
+                    <th>PROFIL TITLE</th>
+                    <td>: PROFIL CONTENT</td>
+                  </tr>
+                  <tr>
+                    <th>PROFIL TITLE</th>
+                    <td>: PROFIL CONTENT</td>
+                  </tr>
+                  <tr>
+                    <th>PROFIL TITLE</th>
+                    <td>: PROFIL CONTENT</td>
+                  </tr>
+                  <tr>
+                    <th>PROFIL TITLE</th>
+                    <td>: PROFIL CONTENT</td>
+                  </tr>
+                  <tr>
+                    <th>PROFIL TITLE</th>
+                    <td>: PROFIL CONTENT</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="footer py-4">
+            <div class="float-md-start d-flex align-items-center pt-lg-5 pt-md-4 pt-5">
+              <div class=" border-end border-dark text-center px-md-3 px-1">
+                <img src="assets/images/html5-logo.png" alt="Logo" width="100" height="100">
+              </div>
+              <div class="ms-2 footer-kelola">
+                Dikelola Oleh :<br>
+                <strong>Pemerintahan Daerah</strong><br><br>
+                Jl. Veteran 1234567 Jl. Veteran 1234567 Jl. Veteran 1234567
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="float-md-start">
+              <ul class="d-lg-block d-none menu-footer" style="margin-left: -10%;">
+                <li class="d-block border-bottom border-dark"><h4>Menus</h4></li>
+                <li class="d-md-inline-block">
+                  <a href="index.html" class="text-decoration-none px-md-2 px-4">BERANDA</a>
+                </li>
+                <li class="d-md-inline-block">
+                  <a href="berita.html" class="text-decoration-none px-md-2 px-4">BERITA</a>
+                </li>
+                <li class="d-md-inline-block">
+                  <a href="galeri.html" class="text-decoration-none px-md-2 px-4">GALERI</a>
+                </li>
+                <li class="d-md-inline-block">
+                  <a href="profil.html" class="text-decoration-none px-md-2 px-4 active">PROFIL</a>
+                </li>
+              </ul>
+              <br class="d-md-none">
+              <iframe class="w-100 lokasi rounded d-lg-block d-md-none" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.901216202075!2d106.7450423!3d-6.3648812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ae889c4b481fc57!2sSekolah%20Menengah%20Kejuruan%20Kharismawita!5e0!3m2!1sid!2sid!4v1673074338491!5m2!1sid!2sid"  allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <br class="d-md-none">
+            </div>
+            <div class="float-md-start ms-md-5 col-lg-3 col-md-5 subs-email mt-lg-4">
+              <h3 class="border-bottom border-dark pb-1">Subscribe</h3>
+              <p><em>Dukung dan Subscribe kami agar selalu mendapat informasi terbaru</em></p>
+              <form>
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control" placeholder="youremail@gmail.com" aria-describedby="subscribe">
+                  <button type="submit" class="input-group-text" id="subscribe"><i class="fas fa-envelope"></i></button>
+                </div>
+              </form>
+            </div>
+          <div class="clearfix"></div>
+          </div>
+          <div class="copyright py-1 px-3 border-top border-dark">
+            &copy; 2023 Pemerintahan Daerah
+          </div>
+        </div>
+      </footer>
+    <!-- End Footer -->
+
+    <script type="text/javascript" src="assets/vendor/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/plugin.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/confirm.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/flatpickr.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/method.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/sweetalert.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/toastr.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/toggle-menu.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+@media screen and (max-width: 768px){
+	.profil-walikota-img img{
+		width: 50%;
+	}
+	.rata{
+		text-align: justify;
+	}
+}
+@media screen and (min-width: 769px){
+	.profil-walikota-img img{
+		width: 100%;
+	}
+}
+.profil-walikota-img a{
+	color: rgb(206, 17, 38);
+}

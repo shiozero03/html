@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KEPALA DAERAH - HTML : Galeri</title>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/galeri.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/toastr.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/confirm.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css/flatpickr.css">
+
+    <link rel="shortcut icon"href="assets/images/html5-logo.png">
+  </head>
+  <body>
+
+    <!-- Header Fixed Top -->
+      <header class="fixed-top">
+
+        <!-- Navbar Menu -->
+          <nav class="navbar-top">
+            <div class="navbar-menu container py-md-3 py-1 position-relative">
+              <div class="d-lg-none toggle-navbar rounded pb-1 px-1 position-absolute mt-1">
+                <i id="close" class="fas fa-close text-white d-none me-1"></i>
+                <i id="open" class="fas fa-bars text-white"></i>
+              </div>
+              <a class="d-flex align-items-center text-white text-decoration-none" href="#">
+                <img src="assets/images/html5-logo.png" alt="Logo" width="50" height="50" class="logo-navbar d-inline-block align-text-top">
+                <h5 class="ms-md-1 ms-1 mt-2">PEMERINTAHAN DAERAH</h5> 
+              </a>
+              <div class="menu-top-navbar d-lg-block d-none pb-1 px-1 position-absolute mt-1">
+                <ul class="mt-4">
+                  <a href="index.html" class="px-2 px-md-2 py-lg-5 text-decoration-none">
+                    <li class="d-lg-inline-block d-block">
+                      <h6>BERANDA</h6>
+                    </li>
+                  </a>
+                  <a href="berita.html" class="px-2 px-md-2 py-lg-5 text-decoration-none">
+                    <li class="d-lg-inline-block d-block">
+                      <h6>BERITA</h6>
+                    </li>
+                  </a>
+                  <a href="galeri.html" class="px-2 px-md-2 py-lg-5 text-decoration-none active">
+                    <li class="d-lg-inline-block d-block">
+                      <h6>GALERI</h6>
+                    </li>
+                  </a>
+                  <a href="profil.html" class="px-2 px-md-2 py-lg-5 text-decoration-none">
+                    <li class="d-lg-inline-block d-block">
+                      <h6>PROFIL</h6>
+                    </li>
+                  </a>
+                  <a class="px-2 px-md-2 py-lg-5 text-decoration-none">
+                    <li class="d-lg-inline-block d-block">
+                      <h6 class="position-relative">
+                        <form action="" method="get">
+                          <input type="text" name="" class="pencarian text-white ps-2 py-2" placeholder="PENCARIAN">
+                          <button class="position-absolute text-white"><i class="fas fa-search"></i></button>
+                        </form>
+                      </h6>
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Navbar Menu Responsive -->
+              <div id="resp-menu" class="d-none responsive-menu-navbar container position-relative">
+                <div class="menu-top-navbar d-lg-none position-absolute">
+                  <form class="px-2 pt-3" action="" method="get">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="PENCARIAN" aria-describedby="search-responsive">
+                      <button type="submit" class="input-group-text" id="search-responsive"><i class="fas fa-search"></i></button>
+                    </div>
+                  </form>
+                  <hr>
+                  <a href="index.html" class="text-decoration-none bg-secondary">
+                    <h6 class="w-100 px-2 py-3">BERANDA</h6>
+                  </a>
+                  <hr>
+                  <a href="berita.html" class="text-decoration-none bg-secondary">
+                    <h6 class="w-100 px-2 py-3">BERITA</h6>
+                  </a>
+                  <hr>
+                  <a href="galeri.html" class="text-decoration-none bg-secondary active">
+                    <h6 class="w-100 px-2 py-3">GALERI</h6>
+                  </a>
+                  <hr>
+                  <a href="profil.html" class="text-decoration-none bg-secondary">
+                    <h6 class="w-100 px-2 py-3">PROFIL</h6>
+                  </a>
+                  <hr>
+                  <br>
+                </div>
+              </div>
+            <!-- End Navbar Menu Responsive -->
+
+          </nav>
+        <!-- End Navbar Menu -->
+
+      </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+      <div class="position-relative navbar-menu container content rounded" style="overflow: hidden;">
+        <div class="pt-3 pb-4">
+          <div>
+            <select id="cat-galeri" class="form-control" onchange="changegaleri()">
+              <option value="foto">FOTO</option>
+              <option value="video">VIDEO</option>
+            </select>
+          </div>
+          <hr class="my-2">
+          <div id="foto-menu">
+            <div class="gallery_container_parent">
+              <div class="gallery_container">
+                <figure class="gallery_item position-relative item_1" onclick="">
+                  <img src="assets/images/galeri/foto/foto-1.jpg" alt="Lorem Ipsum">
+                  <figcaption class="caption">Lorem Ipsum</figcaption>
+                </figure>
+           
+                <figure class="gallery_item position-relative item_2" onclick="">
+                  <img src="assets/images/galeri/foto/foto-2.jpg" alt="What is Lorem Ipsum?">
+                  <figcaption class="caption">What is Lorem Ipsum?</figcaption>
+                </figure>
+         
+                <figure class="gallery_item position-relative item_3" onclick="">
+                  <img src="assets/images/galeri/foto/foto-3.jpg" alt="Why do we use it?">
+                  <figcaption class="caption">Why do we use it?</figcaption>
+                </figure>
+         
+                <figure class="gallery_item position-relative item_4" onclick="">
+                  <img src="assets/images/galeri/foto/foto-4.jpg" alt="Where does it come from?">
+                  <figcaption class="caption">Where does it come from?</figcaption>
+                </figure>
+         
+                <figure class="gallery_item position-relative item_5" onclick="">
+                  <img src="assets/images/galeri/foto/foto-5.jpg" alt="Where can I get some?">
+                  <figcaption class="caption">Where can I get some?</figcaption>
+                </figure>
+         
+                <figure class="gallery_item position-relative item_6" onclick="">
+                  <img src="assets/images/galeri/foto/foto-6.png" alt="Lorem Ipsum">
+                  <figcaption class="caption">Lorem Ipsum</figcaption>
+                </figure>
+         
+                <figure class="gallery_item position-relative item_7" onclick="">
+                  <img src="assets/images/galeri/foto/foto-7.png" alt="What is Lorem Ipsum?">
+                  <figcaption class="caption">What is Lorem Ipsum?</figcaption>
+                </figure>
+
+                <figure class="gallery_item position-relative item_8" onclick="">
+                  <img src="assets/images/galeri/foto/foto-8.png" alt="Why do we use it?">
+                  <figcaption class="caption">Why do we use it?</figcaption>
+                </figure>
+
+                <figure class="gallery_item position-relative item_9" onclick="">
+                  <img src="assets/images/galeri/foto/foto-9.jpg" alt="Where does it come from?">
+                  <figcaption class="caption">Where does it come from?</figcaption>
+                </figure>
+
+                <figure class="gallery_item position-relative item_10" onclick="">
+                  <img src="assets/images/galeri/foto/foto-10.jpg" alt="Where can I get some?">
+                  <figcaption class="caption">Where can I get some?</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="text-center">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+                  <li class="page-item active"><a class="page-link text-dark" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div id="video-menu" class="d-none">
+            <div class="float-md-start col-md-6 col-lg-4">
+              <div class="m-1">
+                <video controls class="w-100">
+                  <source src="assets/images/galeri/video/video.mp4" type="video/mp4">
+                  Browser tidak mendukung tag video
+                </video>
+                <div class="px-2 border border-dark text-video">
+                  <b><em>The standard Lorem Ipsum passage, used since the 1500s</em></b>
+                </div>
+              </div>
+            </div>
+            <div class="float-md-start col-md-6 col-lg-4">
+              <div class="m-1">
+                <video controls class="w-100">
+                  <source src="assets/images/galeri/video/video.mp4" type="video/mp4">
+                  Browser tidak mendukung tag video
+                </video>
+                <div class="px-2 border border-dark text-video">
+                  <b><em>The standard Lorem Ipsum passage, used since the 1500s</em></b>
+                </div>
+              </div>
+            </div>
+            <div class="float-md-start col-md-6 col-lg-4">
+              <div class="m-1">
+                <video controls class="w-100">
+                  <source src="assets/images/galeri/video/video.mp4" type="video/mp4">
+                  Browser tidak mendukung tag video
+                </video>
+                <div class="px-2 border border-dark text-video">
+                  <b><em>The standard Lorem Ipsum passage, used since the 1500s</em></b>
+                </div>
+              </div>
+            </div>
+            <div class="float-md-start col-md-6 col-lg-4">
+              <div class="m-1">
+                <video controls class="w-100">
+                  <source src="assets/images/galeri/video/video.mp4" type="video/mp4">
+                  Browser tidak mendukung tag video
+                </video>
+                <div class="px-2 border border-dark text-video">
+                  <b><em>The standard Lorem Ipsum passage, used since the 1500s</em></b>
+                </div>
+              </div>
+            </div>
+            <div class="float-md-start col-md-6 col-lg-4">
+              <div class="m-1">
+                <video controls class="w-100">
+                  <source src="assets/images/galeri/video/video.mp4" type="video/mp4">
+                  Browser tidak mendukung tag video
+                </video>
+                <div class="px-2 border border-dark text-video">
+                  <b><em>The standard Lorem Ipsum passage, used since the 1500s</em></b>
+                </div>
+              </div>
+            </div>
+            <div class="float-md-start col-md-6 col-lg-4">
+              <div class="m-1">
+                <video controls class="w-100">
+                  <source src="assets/images/galeri/video/video.mp4" type="video/mp4">
+                  Browser tidak mendukung tag video
+                </video>
+                <div class="px-2 border border-dark text-video">
+                  <b><em>The standard Lorem Ipsum passage, used since the 1500s</em></b>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <br>
+            <div class="text-center">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+                  <li class="page-item active"><a class="page-link text-dark" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="footer py-4">
+            <div class="float-md-start d-flex align-items-center pt-lg-5 pt-md-4 pt-5">
+              <div class=" border-end border-dark text-center px-md-3 px-1">
+                <img src="assets/images/html5-logo.png" alt="Logo" width="100" height="100">
+              </div>
+              <div class="ms-2 footer-kelola">
+                Dikelola Oleh :<br>
+                <strong>Pemerintahan Daerah</strong><br><br>
+                Jl. Veteran 1234567 Jl. Veteran 1234567 Jl. Veteran 1234567
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="float-md-start">
+              <ul class="d-lg-block d-none menu-footer" style="margin-left: -10%;">
+                <li class="d-block border-bottom border-dark"><h4>Menus</h4></li>
+                <li class="d-md-inline-block">
+                  <a href="index.html" class="text-decoration-none px-md-2 px-4">BERANDA</a>
+                </li>
+                <li class="d-md-inline-block">
+                  <a href="berita.html" class="text-decoration-none px-md-2 px-4">BERITA</a>
+                </li>
+                <li class="d-md-inline-block">
+                  <a href="galeri.html" class="text-decoration-none px-md-2 px-4 active">GALERI</a>
+                </li>
+                <li class="d-md-inline-block">
+                  <a href="profil.html" class="text-decoration-none px-md-2 px-4">PROFIL</a>
+                </li>
+              </ul>
+              <br class="d-md-none">
+              <iframe style="height: 7.5rem;" class="w-100 rounded d-lg-block d-md-none" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.901216202075!2d106.7450423!3d-6.3648812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ae889c4b481fc57!2sSekolah%20Menengah%20Kejuruan%20Kharismawita!5e0!3m2!1sid!2sid!4v1673074338491!5m2!1sid!2sid"  allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <br class="d-md-none">
+            </div>
+            <div class="float-md-start ms-md-5 col-lg-3 col-md-5 subs-email mt-lg-4">
+              <h3 class="border-bottom border-dark pb-1">Subscribe</h3>
+              <p><em>Dukung dan Subscribe kami agar selalu mendapat informasi terbaru</em></p>
+              <form>
+                <div class="input-group mb-3">
+                  <input type="email" class="form-control" placeholder="youremail@gmail.com" aria-describedby="subscribe">
+                  <button type="submit" class="input-group-text" id="subscribe"><i class="fas fa-envelope"></i></button>
+                </div>
+              </form>
+            </div>
+          <div class="clearfix"></div>
+          </div>
+          <div class="copyright py-1 px-3 border-top border-dark">
+            &copy; 2023 Pemerintahan Daerah
+          </div>
+        </div>
+      </footer>
+    <!-- End Footer -->
+
+    <script type="text/javascript" src="assets/vendor/js/galeri.js"></script>
+
+    <script type="text/javascript" src="assets/vendor/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/plugin.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/confirm.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/flatpickr.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/method.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/sweetalert.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/toastr.js"></script>
+    <script type="text/javascript" src="assets/vendor/js/toggle-menu.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
